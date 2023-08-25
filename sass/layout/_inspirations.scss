@@ -1,0 +1,67 @@
+.inspo-el-box {
+  &-1 {
+    background-image: url("../img/kotlet.jpg");
+  }
+  &-2 {
+    background-image: url("../img/sałata.jpg");
+  }
+  &-3 {
+    background-image: url("../img/naleśnik.jpg");
+  }
+  &-4 {
+    background-image: url("../img/zupa.jpg");
+  }
+  &-5 {
+    background-image: url("../img/sałatka.jpg");
+  }
+  &-6 {
+    background-image: url("../img/surówka.jpg");
+  }
+  &-7 {
+    background-image: url("../img/lunch.jpg");
+  }
+  &-8 {
+    background-image: url("../img/deser.jpg");
+  }
+  &-1,
+  &-2,
+  &-3,
+  &-4,
+  &-5,
+  &-6,
+  &-7,
+  &-8 {
+    width: 25rem;
+    height: 25rem;
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: $shadow-light;
+
+    .inspo-text {
+      color: $color-white;
+      font-size: 3.2rem;
+      background-color: rgba($color-white, 0.4);
+      backdrop-filter: blur(3px);
+      padding: 1rem 3rem;
+
+      border-radius: 2px;
+    }
+  }
+}
+
+.inspo-bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color-primary, 0.4);
+  padding: 3.2rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  box-shadow: $shadow-light;
+}
