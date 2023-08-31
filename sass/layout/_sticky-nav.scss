@@ -1,8 +1,8 @@
-.sticky-navigation {
+.navbar {
   display: none;
 }
 
-.open .sticky-navigation {
+.open .navbar {
   height: 95vh;
   width: 5rem;
   background-color: $color-primary;
@@ -18,12 +18,12 @@
   transition: all 0.2s;
   z-index: 100;
 
-  .sticky-input {
+  .input-search {
     display: none;
   }
 
-  .sticky-search-btn-container {
-    background-color: $color-primary-light-2;
+  .nav-btn-container {
+    background-color: $color-primary;
     background-size: cover;
     border-radius: 50%;
     margin-top: 3rem;
@@ -31,53 +31,55 @@
     width: 5rem;
     position: relative;
     transition: all 0.2s;
+    border: none;
 
     &:hover {
       cursor: pointer;
       background-color: rgba($color-primary-dark, 0.7);
       border-radius: 50px;
     }
-  }
 
-  &-btn {
-    height: 3.5rem;
-    width: 3.5rem;
+    .nav-btn {
+      height: 3.5rem;
+      width: 3.5rem;
 
-    border: none;
-    background-color: transparent;
-    display: inline-block;
-    transition: all 0.2s;
-    position: absolute;
-    transform: translate(7px, 7px);
+      border: none;
+      background-color: transparent;
+      display: inline-block;
+      transition: all 0.2s;
+      position: absolute;
+      transform: translate(7px, 7px);
+    }
   }
 }
 
-.open .nav-open {
+.navbar.nav-open {
   background-color: rgba($color-white, 0.6);
   backdrop-filter: blur(5px);
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   align-items: start;
+  // overflow: hidden;
 }
 
-.open .sticky-search-btn-container .nav-open {
+.open .nav-btn-container .nav-open {
   margin-top: 0;
 }
 
-.loop:hover,
-.menu:hover {
+.loop-nav:hover,
+.menu-nav:hover {
   cursor: pointer;
 }
 
-.nav-open .loop:hover,
-.nav-open .menu:hover {
+.nav-open .loop-nav:hover,
+.nav-open .menu-nav:hover {
   cursor: pointer;
 }
 
-.loop,
-.menu {
+.loop-nav,
+.menu-nav {
   width: 100%;
   height: 100%;
 }
@@ -86,7 +88,7 @@
   width: 100%;
 }
 
-.sticky-navigation.nav-open .sticky-input {
+.navbar.nav-open .input-search {
   display: flex;
   position: absolute;
   top: 50%;
@@ -101,7 +103,7 @@
   justify-content: center;
 }
 
-.sticky-navigation.nav-open .sticky-input input {
+.navbar.nav-open .input-search input {
   width: 100%;
   height: 100%;
   background-color: transparent;

@@ -8,10 +8,13 @@
 
 html {
   font-size: 62.5%; //now 1 rem will be equal to 10px
+  -webkit-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
   box-sizing: border-box;
+
   // padding: 1.5rem;
   // max-width: 130rem;
 }
@@ -19,4 +22,12 @@ body {
 ::selection {
   background-color: $color-primary;
   color: $color-white;
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+
+.overflow {
+  overflow: hidden;
 }

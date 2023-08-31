@@ -1,5 +1,6 @@
 .header {
   height: 95vh;
+  position: relative;
 
   &__container {
     height: 95vh;
@@ -11,13 +12,17 @@
     z-index: -10;
 
     animation: bgFadeIn 0.8s ease-in-out;
-    // animation-delay: 1s;
     animation-fill-mode: backwards;
 
     &-button {
-      bottom: 2rem;
+      bottom: 3rem;
       left: 45%;
       text-shadow: $text-shadow;
+      text-decoration: none;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &:hover {
         animation: jumpDown 1.5s infinite;
@@ -70,4 +75,16 @@
       }
     }
   }
+}
+
+.overflow {
+  overflow: hidden;
+}
+.logo-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10rem;
+  height: 10rem;
+  margin: 2rem;
 }

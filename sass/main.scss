@@ -7,15 +7,20 @@
 @import "base/typography";
 
 @import "components/buttons";
-@import "components/search-bar";
+@import "components/carousel";
+@import "components/tags";
 
+// @import "components/search-bar";
+@import "layout/article";
 @import "layout/cuisines";
+@import "layout/footer";
 @import "layout/footer";
 @import "layout/form";
 @import "layout/grid";
 @import "layout/header";
 @import "layout/inspirations";
 @import "layout/navigation";
+@import "layout/recipes";
 @import "layout/sticky-nav";
 
 @import "pages/home";
